@@ -1,3 +1,5 @@
+from testcases import get_map_by_testcase
+
 # re-entering: -1 point
 # each step without cleaning: -1 point
 # cleaning: 20 point
@@ -14,3 +16,16 @@ def performance_measure(current_step):
         total_score = total_score - 1
     clean_rate = num_cleaned_places/ len(seen_places)
     total_score += total_score + clean_rate * 10
+
+
+def start_vacuming(map, loc): 
+    pass
+
+
+
+
+if __name__ == '__main__':
+    map = get_map_by_testcase(1)
+    current_loc = (0, 0)
+    start_vacuming(map, current_loc)
+
